@@ -1,0 +1,70 @@
+/*Header*/
+.encabezado {
+    background-color: #000000;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 120px;
+    padding: 10px 10%;
+    padding-bottom: 5px;
+}
+
+.encabezado .logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.encabezado .logo img{
+    height: 70px;
+    width: auto;
+    border-radius: 50%;
+    transition: all 0.4s;;
+}
+
+.encabezado .logo img:hover{
+    transform: scale(1.2);
+}
+
+.encabezado nav .links{
+    list-style: none;
+    padding-left: 0px;
+}
+
+.encabezado nav .links li{
+    display: inline-block;
+    padding: 0 20px;
+    transition: all 0.5s;
+    font-size: 20px;
+}
+.encabezado nav .links li:hover{
+    transform: scale(1.1);
+}
+
+/*Diseño responsive*/
+@media (max-width: 1000px){
+    .encabezado{
+        position: relative;
+    }
+    .encabezado .logo img{
+        height: 50px;
+        width: auto;
+    }
+    .encabezado nav .links li{
+        font-size: 16px;
+    }
+}
+@media (max-width: 600px){
+    .encabezado{
+    background-color: #000000;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    padding: 15px 10%;
+    padding-bottom: 0px;
+    }
+    .encabezado .logo{
+        align-self: center;
+        margin: 0%;
+    }
+}
