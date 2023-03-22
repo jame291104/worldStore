@@ -1,0 +1,14 @@
+.promo{
+    color: #244049;
+    font-family: sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 10vh;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+.subtitle{
+    text-align: center;
+    font-size: 30px;
+    color: #000000fc;
+}

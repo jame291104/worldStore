@@ -4,9 +4,12 @@ import { useEffect, useState } from 'react';
 import { Header } from "./Header";
 import Carousel from 'react-bootstrap/Carousel';
 import Card from 'react-bootstrap/Card';
+import { Footer } from "./Footer";
+
 
 export const Home = () => {
   const [products, setProducts] = useState([])
+  const [search, setSearch] = useState("")
 
   const getApi = async () => {
       try {
@@ -18,6 +21,23 @@ export const Home = () => {
         console.log("uy parce")
       }
   }
+  //Capturando valor
+
+  const searcher = (e) => {
+    setSearch(e.target.value)
+  }
+
+  //Filtrado
+
+  let results = []
+  if (!search) {
+    results = products
+  }else{
+    results = products.filter( (dato) =>
+    dato.title.toLowerCase().includes(search.toLocaleLowerCase())
+    )
+  }
+
 
   useEffect(() => {
    getApi()
@@ -89,10 +109,14 @@ export const Home = () => {
            </Carousel.Item>
         </Carousel> 
         <div className='my-5 row justify-content-center  mx-0'>
+          <div className="input-group mb-5 my-5">
+            <span className="input-group-text" id="basic-addon1"><i className="bi bi-search"></i></span>
+                <input value={search} onChange={searcher} type="text" className="form-control" placeholder="Buscar producto" aria-label="Username" aria-describedby="basic-addon1"/>
+          </div>
           {
-            products.map((product)=>
+            results.map((product)=>
             <Card className='m-4 px-0' key={product.id} style={{ width: '18rem' }}>
-            <Card.Img  className='py-3' variant="top" src={product.image} 
+            <Card.Img  className='py-3 px-3' variant="top" src={product.image} 
             width={200}
             height={300}
             />
@@ -107,6 +131,7 @@ export const Home = () => {
           }
            
         </div>
+        <Footer/>
     </main>
     
   )

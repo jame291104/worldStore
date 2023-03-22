@@ -26,7 +26,7 @@ export const Header = () => {
             <Nav.Link><Link className="text-decoration-none text-light mx-3" to='/'>Inicio</Link></Nav.Link>
             <Nav.Link><Link className="text-decoration-none text-light mx-3" to='/Ofertas'>Ofertas</Link></Nav.Link>
             <Nav.Link><Link className="text-decoration-none text-light mx-3" to='/AboutUs'>Nosotros</Link></Nav.Link>
-            <Nav.Link className="text-decoration-none text-light mx-3">Compras <i class="bi bi-bag-check-fill"></i></Nav.Link>
+            <Nav.Link className="text-decoration-none text-light mx-3">Carrito <i className="bi bi-bag-check-fill"></i></Nav.Link>
             <NavDropdown className='bg-light text-light' title="Vender" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">Mis Productos</NavDropdown.Item>
               <NavDropdown.Item href="#action4">

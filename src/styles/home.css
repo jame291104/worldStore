@@ -21,3 +21,6 @@ body{
 .price{
     color: #43526b;
 }
+.contenedor{
+  min-height: 100vh;
+}
