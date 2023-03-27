@@ -109,6 +109,8 @@ export const Home = () => {
            </Carousel.Item>
         </Carousel> 
         <div className='my-5 row justify-content-center  mx-0'>
+          <h1 className='text-center'>Encuentra lo que quieres</h1>
+            <h5 className='text-center'>¡Por el menor precio!</h5>
           <div className="input-group mb-5 my-5">
             <span className="input-group-text" id="basic-addon1"><i className="bi bi-search"></i></span>
                 <input value={search} onChange={searcher} type="text" className="form-control" placeholder="Buscar producto" aria-label="Username" aria-describedby="basic-addon1"/>

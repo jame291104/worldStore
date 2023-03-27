@@ -7,7 +7,7 @@ export const Footer = () => {
     <footer>
         <div className="container">
             <div className="col1">
-                <a href="#"><img className='logo2' src="/img/logo2.png" alt="" /></a>
+                <a href="#"><img className='logo2' src="/img/logo1.png" alt="" /></a>
             </div>
             <div className="col2">
                 <ul className="menu">

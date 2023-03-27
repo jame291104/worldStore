@@ -44,7 +44,7 @@ export const Ofertas = () => {
     <main>
       <Header/>
       <div className='my-5 row justify-content-center  mx-0'>
-        <h1 className='promo'>¡Consigue lo que quieres por menos $20!</h1>
+        <h1 className='promo'>¡Consigue lo que quieres por menos de $20!</h1>
          <p className='subtitle'>Disfruta nuestras ofertas</p>
           <div className="input-group mb-5 my-5">
             <span className="input-group-text" id="basic-addon1"><i className="bi bi-search"></i></span>
